@@ -8,7 +8,10 @@ namespace Modelo
 {
     public class Bebida
     {
-        public string Codigo { get; set; }
+        public int Codigo { get; set; }
+        public int CodPessoa { get; set; }
+        public int CodDistribuicao { get; set; }
+        public string Nome { get; set; }
         //public
     }
 }

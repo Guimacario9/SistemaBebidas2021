@@ -69,13 +69,13 @@ namespace DAL
 
                         if (reader.NextResult())
                         {
-                            s.Passageiros = new List<Passageiro>();
+                            s.Passageiros = new List<Bebida>();
                             while (reader.Read())
                             {
-                                Passageiro p = new Passageiro();
+                                Bebida p = new Bebida();
                                 p.Codigo = int.Parse(reader["codigo"].ToString());
                                 p.CodPessoa = int.Parse(reader["CodPessoa"].ToString());
-                                p.CodSolicitacao = int.Parse(reader["CodSolicitacao"].ToString());
+                                p.CodDistribuicao = int.Parse(reader["CodSolicitacao"].ToString());
                                 p.Nome = reader["Nome"].ToString();
 
                                 s.Passageiros.Add(p);
@@ -144,7 +144,7 @@ namespace DAL
                     DataRow row = dt.NewRow();
                     row["codigo"] = item.Codigo;
                     row["codPessoa"] = item.CodPessoa;
-                    row["codSolicitacao"] = item.CodSolicitacao;
+                    row["codSolicitacao"] = item.CodDistribuicao;
 
                     dt.Rows.Add(row);
                 }
