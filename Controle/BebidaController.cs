@@ -58,7 +58,7 @@ namespace Controle
             try
             {
                 DaoBebida dao = new DaoBebida();
-                Veiculo v = dao.BuscarPorCodigo(codigo);
+                Bebida v = dao.BuscarPorCodigo(codigo);
                 return v;
             }
             catch (Exception)

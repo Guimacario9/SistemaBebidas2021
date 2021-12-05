@@ -29,7 +29,7 @@ namespace DAL
 
                     SqlParameter parPassageiros = new SqlParameter();
                     parPassageiros.ParameterName = "passageiros";
-                    parPassageiros.Value = criarEstruturaPassageiros(s.Passageiros); //ARRUMAR ISSO
+                   
                     parPassageiros.SqlDbType = SqlDbType.Structured;
                     cmd.Parameters.Add(parPassageiros);
 
@@ -130,7 +130,7 @@ namespace DAL
             }
         }
 
-        private DataTable criarEstruturaPassageiros(List<Passageiro> lista)
+        private DataTable criarEstruturaPassageiros(List<Bebida> lista)
         {
             try
             {
@@ -139,7 +139,7 @@ namespace DAL
                 dt.Columns.Add("codPessoa", typeof(int));
                 dt.Columns.Add("codSolicitacao", typeof(int));
 
-                foreach (Passageiro item in lista)
+                foreach (Bebida item in lista)
                 {
                     DataRow row = dt.NewRow();
                     row["codigo"] = item.Codigo;

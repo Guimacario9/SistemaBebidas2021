@@ -1,4 +1,5 @@
-﻿using SistemaBebidas.Views;
+﻿using DAL;
+using SistemaBebidas.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,18 +37,18 @@ namespace Controle
             }
         }
 
-        public List<Departamento> BuscarSetores()
-        {
-            try
-            {
-                DaoDepartamentodao = new DaoDepartamento();
-                return dao.BuscarTodos();
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-        }
+        //public List<Departamento> BuscarSetores()
+        //{
+        //    try
+        //    {
+        //        DaoDepartamentodao = new DaoDepartamento();
+        //        return dao.BuscarTodos();
+        //    }
+        //    catch (Exception)
+        //    {
+        //        throw;
+        //    }
+        //}
 
         public void Remover(int codigo)
         {
@@ -73,6 +74,11 @@ namespace Controle
             {
                 throw;
             }
+        }
+
+        internal object BuscarSetores()
+        {
+            throw new NotImplementedException();
         }
     }
 }

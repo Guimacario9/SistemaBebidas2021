@@ -8,5 +8,7 @@ namespace Modelo
 {
     public class Bebida
     {
+        public string Codigo { get; set; }
+        //public
     }
 }

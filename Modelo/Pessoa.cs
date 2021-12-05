@@ -14,7 +14,7 @@ namespace Modelo
         public string Nome { get; set; }
         public string Endereco { get; set; }
         public string Telefone { get; set; }
-        public bool EFuncionario { get; set; }
+        public int Cpf { get; set; }
         public int CodSetor { get; set; }
         #endregion
 

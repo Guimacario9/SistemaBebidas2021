@@ -24,7 +24,7 @@ namespace DAL
             throw new NotImplementedException();
         }
 
-        public Veiculo BuscarPorCodigo(int codigo)
+        public Bebida BuscarPorCodigo(int codigo)
         {
             throw new NotImplementedException();
         }
