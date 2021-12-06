@@ -12,6 +12,9 @@ namespace Modelo
         public int CodPessoa { get; set; }
         public int CodDistribuicao { get; set; }
         public string Nome { get; set; }
-        //public
+        public string Valor { get; set; }
+        public string Produto { get; set; }
+        public string Cidade { get; set; }
+        
     }
 }
