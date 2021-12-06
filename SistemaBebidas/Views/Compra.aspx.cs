@@ -155,7 +155,7 @@ namespace SistemaBebidas.Views
         {
             try
             {
-                VeiculoController ctr = new VeiculoController();
+                BebidaController ctr = new BebidaController();
                 ctr.Remover(codigo);
             }
             catch (Exception)
