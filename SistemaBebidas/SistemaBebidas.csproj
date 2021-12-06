@@ -125,13 +125,6 @@
     <Compile Include="Views\Compra.aspx.designer.cs">
       <DependentUpon>Compra.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Views\Distruibuicao.aspx.cs">
-      <DependentUpon>Distruibuicao.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Views\Distruibuicao.aspx.designer.cs">
-      <DependentUpon>Distruibuicao.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Views\Pessoa.aspx.cs">
       <DependentUpon>Pessoa.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -155,7 +148,6 @@
     <Content Include="Scripts\inputmask\jquery.inputmask.js" />
     <Content Include="Scripts\inputmask\jquery.inputmask.min.js" />
     <Content Include="Views\Compra.aspx" />
-    <Content Include="Views\Distruibuicao.aspx" />
     <Content Include="Views\Pessoa.aspx" />
     <Content Include="Views\Setor.aspx" />
     <Content Include="Web.config" />
