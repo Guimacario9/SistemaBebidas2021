@@ -24,8 +24,8 @@ namespace DAL
                     cmd.Parameters.Add(new SqlParameter("telefone", p.Telefone));
                     cmd.Parameters.Add(new SqlParameter("TipoEstabelecimento", p.TipoEstabelecimento));
                     cmd.Parameters.Add(new SqlParameter("Cpf", p.Cpf));
-                    cmd.Parameters.Add(new SqlParameter("PessoaFisica", p.PessoaFisica));
-                    cmd.Parameters.Add(new SqlParameter("PessoaJuridica", p.PessoaJuridica));
+                    cmd.Parameters.Add(new SqlParameter("txtTipoPessoa", p.TipoPessoa));
+                    
                     
 
                     cmd.ExecuteNonQuery();
@@ -85,8 +85,7 @@ namespace DAL
                             p.Endereco = reader["Endereco"].ToString();
                             p.Telefone = reader["Telefone"].ToString();
                             p.TipoEstabelecimento = reader["TipoEstabelecimento"].ToString();
-                            p.PessoaJuridica = reader["PessoaJuridica"].ToString();
-                            p.PessoaFisica = reader["PessoaFisica"].ToString();
+                            p.TipoPessoa = reader["TipoPessoa"].ToString();
                             p.Cpf = int.Parse(reader["Cpf"].ToString());
                             p.CodSetor = string.IsNullOrEmpty(reader["codSetor"].ToString()) ? 0 : int.Parse(reader["codSetor"].ToString());
 
@@ -120,8 +119,7 @@ namespace DAL
                             p.Endereco = reader["Endereco"].ToString();
                             p.Telefone = reader["Telefone"].ToString();
                             p.TipoEstabelecimento = reader["TipoEstabelecimento"].ToString();
-                            p.PessoaJuridica = reader["PessoaJuridica"].ToString();
-                            p.PessoaFisica = reader["PessoaFisica"].ToString();
+                            p.TipoPessoa = reader["PessoaJuridica"].ToString();
                             p.Cpf = int.Parse(reader["Cpf"].ToString());
                             p.CodSetor = string.IsNullOrEmpty(reader["codSetor"].ToString()) ? 0 : int.Parse(reader["codSetor"].ToString());
                             p.NomeSetor = reader["NomeSetor"].ToString();

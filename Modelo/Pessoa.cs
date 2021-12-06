@@ -17,13 +17,13 @@ namespace Modelo
         
         public int Cpf { get; set; }
         public string TipoEstabelecimento { get; set; }
+        public string TipoPessoa { get; set; }
         public int CodSetor { get; set; }
         #endregion
 
         #region CAMPOS AUXILIARES
         public string NomeSetor { get; set; }
-        public string PessoaFisica { get; set; }
-        public string PessoaJuridica { get; set; }
+        
         #endregion
 
     }

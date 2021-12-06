@@ -30,6 +30,10 @@
                     <asp:Label Text="Tipo Estabecimento" ID="lbTipoEstabelcimento" runat="server" CssClass="form-label" AssociatedControlID="txtTipoEstabelecimento" />
                     <asp:TextBox runat="server" ID="txtTipoEstabelecimento" CssClass="form-control" />
                 </div>
+                <div class="col-4 form-group">
+                    <asp:Label Text="Tipo Pessoa" ID="lbTipoPessoa" runat="server" CssClass="form-label" AssociatedControlID="txtTipoPessoa" />
+                    <asp:TextBox runat="server" ID="txtTipoPessoa" CssClass="form-control" />
+                </div>
             </div>
             <br />
               <asp:Panel runat="server" ID="pnlSetor" Visible="false"
