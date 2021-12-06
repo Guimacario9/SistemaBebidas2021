@@ -22,7 +22,10 @@ namespace DAL
                     cmd.Parameters.Add(new SqlParameter("nome", p.Nome));
                     cmd.Parameters.Add(new SqlParameter("endereco", p.Endereco));
                     cmd.Parameters.Add(new SqlParameter("telefone", p.Telefone));
-                    cmd.Parameters.Add(new SqlParameter("eFuncionario", p.EFuncionario));
+                    cmd.Parameters.Add(new SqlParameter("Cpf", p.Cpf));
+                    cmd.Parameters.Add(new SqlParameter("PessoaFisica", p.PessoaFisica));
+                    cmd.Parameters.Add(new SqlParameter("PessoaJuridica", p.PessoaJuridica));
+                    
 
                     cmd.ExecuteNonQuery();
                 }
@@ -80,7 +83,9 @@ namespace DAL
                             p.Nome = reader["nome"].ToString();
                             p.Endereco = reader["Endereco"].ToString();
                             p.Telefone = reader["Telefone"].ToString();
-                            p.EFuncionario = bool.Parse(reader["eFuncionario"].ToString());
+                            p.PessoaJuridica = reader["PessoaJuridica"].ToString();
+                            p.PessoaFisica = reader["PessoaFisica"].ToString();
+                            p.Cpf = int.Parse(reader["Cpf"].ToString());
                             p.CodSetor = string.IsNullOrEmpty(reader["codSetor"].ToString()) ? 0 : int.Parse(reader["codSetor"].ToString());
 
                         }
@@ -112,7 +117,9 @@ namespace DAL
                             p.Nome = reader["nome"].ToString();
                             p.Endereco = reader["Endereco"].ToString();
                             p.Telefone = reader["Telefone"].ToString();
-                            p.EFuncionario = bool.Parse(reader["eFuncionario"].ToString());
+                            p.PessoaJuridica = reader["PessoaJuridica"].ToString();
+                            p.PessoaFisica = reader["PessoaFisica"].ToString();
+                            p.Cpf = int.Parse(reader["Cpf"].ToString());
                             p.CodSetor = string.IsNullOrEmpty(reader["codSetor"].ToString()) ? 0 : int.Parse(reader["codSetor"].ToString());
                             p.NomeSetor = reader["NomeSetor"].ToString();
                             resultado.Add(p);

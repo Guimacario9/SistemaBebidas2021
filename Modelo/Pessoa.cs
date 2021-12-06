@@ -20,6 +20,8 @@ namespace Modelo
 
         #region CAMPOS AUXILIARES
         public string NomeSetor { get; set; }
+        public string PessoaFisica { get; set; }
+        public string PessoaJuridica { get; set; }
         #endregion
 
     }

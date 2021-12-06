@@ -26,6 +26,10 @@
                     <asp:Label Text="Cidade" ID="lbProduto" runat="server" CssClass="form-label" AssociatedControlID="txtProduto" />
                     <asp:TextBox runat="server" ID="txtProduto" CssClass="form-control" />
                 </div>
+                 <div class="col-4 form-group">
+                    <asp:Label Text="Cidade" ID="lbQuantidade" runat="server" CssClass="form-label" AssociatedControlID="txtQuantidade" />
+                    <asp:TextBox runat="server" ID="txtQuantidade" CssClass="form-control" />
+                </div>
                 <div class="col-4 form-group">
                     <asp:Label Text="Cidade" ID="lbValor" runat="server" CssClass="form-label" AssociatedControlID="txtValor" />
                     <asp:TextBox runat="server" ID="txtValor" CssClass="form-control" />
@@ -55,6 +59,7 @@
                         <th>Cliente</th>
                         <th>Cidade</th>
                         <th>Produto</th>
+                        <th>Quantidade</th>
                         <th>Valor</th>
                         <th>Ações</th>
                     </tr>
@@ -69,6 +74,7 @@
                                 <td><%# Eval("CLiente")%></td>
                                 <td><%# Eval("Cidade")%></td>
                                 <td><%# Eval("Produto")%></td>
+                                <td><%# Eval("Quantidade")%></td>
                                 <td><%# Eval("Valor")%></td>
                                 <td>
 

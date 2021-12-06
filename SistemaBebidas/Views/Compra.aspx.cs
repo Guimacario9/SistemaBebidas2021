@@ -55,12 +55,8 @@ namespace SistemaBebidas.Views
                 txtCliente.Text = v.CodPessoa.ToString();
                 txtCidade.Text = v.Cidade;
                 txtProduto.Text = v.Produto;
+                txtQuantidade.Text = v.Produto;
                 txtValor.Text = v.Valor;
-                v.CodPessoa = int.Parse(txtCliente.Text);
-                v.Cidade = txtCidade.Text;
-                v.Produto = txtProduto.Text;
-                v.Valor = txtValor.Text;
-
 
 
                 BebidaController ctr = new BebidaController();
@@ -94,6 +90,7 @@ namespace SistemaBebidas.Views
                 txtCliente.Text = string.Empty;
                 txtCidade.Text = string.Empty;
                 txtProduto.Text = string.Empty;
+                txtQuantidade.Text = string.Empty;
                 txtValor.Text = string.Empty;
                 
             }
@@ -139,6 +136,7 @@ namespace SistemaBebidas.Views
                 txtCliente.Text = v.CodPessoa.ToString();
                 txtCidade.Text = v.Cidade;
                 txtProduto.Text = v.Produto;
+                txtQuantidade.Text = v.Quantidade;
                 txtValor.Text = v.Valor;
                 
 
