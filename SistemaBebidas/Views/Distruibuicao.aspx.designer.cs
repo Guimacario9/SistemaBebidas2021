@@ -11,7 +11,7 @@ namespace SistemaBebidas.Views
 {
 
 
-    public partial class Pessoa
+    public partial class Distruibuicao
     {
 
         /// <summary>
@@ -69,40 +69,40 @@ namespace SistemaBebidas.Views
         protected global::System.Web.UI.WebControls.TextBox txtEndereco;
 
         /// <summary>
-        /// Controle lbTelefone.
+        /// Controle lbCidade.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbTelefone;
+        protected global::System.Web.UI.WebControls.Label lbCidade;
 
         /// <summary>
-        /// Controle txtTelefone.
+        /// Controle txtCidade.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTelefone;
+        protected global::System.Web.UI.WebControls.TextBox txtCidade;
 
         /// <summary>
-        /// Controle lbCpf.
+        /// Controle lbEmpresa.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbCpf;
+        protected global::System.Web.UI.WebControls.Label lbEmpresa;
 
         /// <summary>
-        /// Controle txtCpf.
+        /// Controle txtEmpresa.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCpf;
+        protected global::System.Web.UI.WebControls.TextBox txtEmpresa;
 
         /// <summary>
         /// Controle pnlSetor.

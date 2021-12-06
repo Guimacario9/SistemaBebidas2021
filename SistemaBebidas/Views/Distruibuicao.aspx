@@ -1,8 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Template/Site.Master" AutoEventWireup="true" CodeBehind="Pessoa.aspx.cs" Inherits="SistemaBebidas.Views.Pessoa" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Template/Site.Master" AutoEventWireup="true" CodeBehind="Distruibuicao.aspx.cs" Inherits="SistemaBebidas.Views.Distruibuicao" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
- <asp:UpdatePanel runat="server" ID="UpCadastro" UpdateMode="Conditional">
+    <asp:UpdatePanel runat="server" ID="UpCadastro" UpdateMode="Conditional">
         <ContentTemplate>
 
             <asp:HiddenField ID="hfCodigo" runat="server" />
@@ -17,18 +17,18 @@
                     <asp:TextBox runat="server" ID="txtEndereco" CssClass="form-control" />
                 </div>
 
-                <div class="col-4 form-group">
-                    <asp:Label Text="Telefone" ID="lbTelefone" runat="server" CssClass="form-label" AssociatedControlID="txtTelefone" />
-                    <asp:TextBox runat="server" ID="txtTelefone" CssClass="form-control" />
-                </div>
-                 
                  <div class="col-4 form-group">
-                    <asp:Label Text="Telefone" ID="lbCpf" runat="server" CssClass="form-label" AssociatedControlID="txtCpf" />
-                    <asp:TextBox runat="server" ID="txtCpf" CssClass="form-control" />
+                    <asp:Label Text="Endereco" ID="lbCidade" runat="server" CssClass="form-label" AssociatedControlID="txtCidade" />
+                    <asp:TextBox runat="server" ID="txtCidade" CssClass="form-control" />
                 </div>
+                  <div class="col-4 form-group">
+                    <asp:Label Text="Endereco" ID="lbEmpresa" runat="server" CssClass="form-label" AssociatedControlID="txtEmpresa" />
+                    <asp:TextBox runat="server" ID="txtEmpresa" CssClass="form-control" />
+                </div>
+
             </div>
             <br />
-              <asp:Panel runat="server" ID="pnlSetor" Visible="false"
+                <asp:Panel runat="server" ID="pnlSetor" Visible="false"
                     CssClass="col-4">
                     <asp:Label Text="Setor" runat="server" />
                     <asp:DropDownList runat="server" ID="ddlSetor"
@@ -109,6 +109,4 @@
             </table>
         </ContentTemplate>
     </asp:UpdatePanel>
-
 </asp:Content>
-

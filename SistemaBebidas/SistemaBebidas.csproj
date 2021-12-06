@@ -118,12 +118,12 @@
     <Compile Include="Template\Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
-    <Compile Include="Views\Bebidas.aspx.cs">
-      <DependentUpon>Bebidas.aspx</DependentUpon>
+    <Compile Include="Views\Distruibuicao.aspx.cs">
+      <DependentUpon>Distruibuicao.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\Bebidas.aspx.designer.cs">
-      <DependentUpon>Bebidas.aspx</DependentUpon>
+    <Compile Include="Views\Distruibuicao.aspx.designer.cs">
+      <DependentUpon>Distruibuicao.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Pessoa.aspx.cs">
       <DependentUpon>Pessoa.aspx</DependentUpon>
@@ -140,7 +140,7 @@
     <Content Include="Scripts\inputmask\inputmask.min.js" />
     <Content Include="Scripts\inputmask\jquery.inputmask.js" />
     <Content Include="Scripts\inputmask\jquery.inputmask.min.js" />
-    <Content Include="Views\Bebidas.aspx" />
+    <Content Include="Views\Distruibuicao.aspx" />
     <Content Include="Views\Pessoa.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

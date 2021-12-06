@@ -11,7 +11,7 @@ namespace DAL
     public abstract class Dao
     {
 
-       private const string CONNECTION_STRING = "Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Treinamento";
+       private const string CONNECTION_STRING = "Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=SistemaBebidas";
        
 
         protected SqlCommand CriarComando(string sql, System.Data.CommandType type)

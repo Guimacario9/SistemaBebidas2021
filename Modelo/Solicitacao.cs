@@ -10,14 +10,10 @@ namespace Modelo
     {
 
         public int Codigo { get; set; }
-        public int CodVeiculo { get; set; }
+        public int CodBebida { get; set; }
         public int CodSolicitante { get; set; }
-        public DateTime DataSaida { get; set; }
-        public bool ComMotorista { get; set; }
-
-        public List<Passageiro> Passageiros { get; set; }
-        public string ModeloVeiculo { get; set; }
-        public string NomeSolicitante { get; set; }
+        public DateTime DataVenda { get; set; }
+        
 
     }
 }

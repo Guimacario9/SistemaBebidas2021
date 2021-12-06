@@ -15,23 +15,23 @@ namespace DAL
         {
             try
             {
-                using (SqlCommand cmd = CriarComando("PROC_I_SolicitacaoVeiculo", CommandType.StoredProcedure))
+                using (SqlCommand cmd = CriarComando("PROC_I_SolicitacaoBebida", CommandType.StoredProcedure))
                 {
-                    SqlParameter par2 = new SqlParameter("codVeiculo", s.CodVeiculo);
+                    SqlParameter par2 = new SqlParameter("codBebida", s.CodBebida);
                     SqlParameter par3 = new SqlParameter("codSolicitante", s.CodSolicitante);
-                    SqlParameter par4 = new SqlParameter("data", s.DataSaida);
-                    SqlParameter par5 = new SqlParameter("comMotorista", s.ComMotorista);
+                    SqlParameter par4 = new SqlParameter("data", s.DataVenda);
+                    
 
                     cmd.Parameters.Add(par2);
                     cmd.Parameters.Add(par3);
                     cmd.Parameters.Add(par4);
-                    cmd.Parameters.Add(par5);
+                    
 
-                    SqlParameter parPassageiros = new SqlParameter();
-                    parPassageiros.ParameterName = "passageiros";
-                   
-                    parPassageiros.SqlDbType = SqlDbType.Structured;
-                    cmd.Parameters.Add(parPassageiros);
+                    SqlParameter parBebidas = new SqlParameter();
+                    parBebidas.ParameterName = "bebidas";
+
+                    parBebidas.SqlDbType = SqlDbType.Structured;
+                    cmd.Parameters.Add(parBebidas);
 
                     cmd.ExecuteNonQuery();
 
@@ -56,20 +56,17 @@ namespace DAL
                         if (reader.Read())
                         {
                             s.Codigo = int.Parse(reader["codigo"].ToString());
-                            s.CodVeiculo = int.Parse(reader["CodVeiculo"].ToString());
+                            s.CodBebida = int.Parse(reader["CodBebida"].ToString());
                             s.CodSolicitante = int.Parse(reader["CodSolicitante"].ToString());
 
-                            s.DataSaida = DateTime.Parse(reader["DataSaida"].ToString());
-                            s.ComMotorista = bool.Parse(reader["ComMotorista"].ToString());
-
-                            s.ModeloVeiculo = reader["ModeloVeiculo"].ToString();
-                            s.NomeSolicitante = reader["NomeSolicitante"].ToString();
+                            s.DataVenda = DateTime.Parse(reader["DataVenda"].ToString());
+                            
                             
                         }
 
                         if (reader.NextResult())
                         {
-                            s.Passageiros = new List<Bebida>();
+                            s.Empresa = new List<Empresa>();
                             while (reader.Read())
                             {
                                 Bebida p = new Bebida();
@@ -78,7 +75,7 @@ namespace DAL
                                 p.CodDistribuicao = int.Parse(reader["CodSolicitacao"].ToString());
                                 p.Nome = reader["Nome"].ToString();
 
-                                s.Passageiros.Add(p);
+                                s.Empresa.Add(p);
                             }
                         }
 
@@ -108,14 +105,11 @@ namespace DAL
                         {
                             Solicitacao p = new Solicitacao();
                             p.Codigo = int.Parse(reader["codigo"].ToString());
-                            p.CodVeiculo = int.Parse(reader["CodVeiculo"].ToString());
+                            p.CodBebida = int.Parse(reader["CodBebida"].ToString());
                             p.CodSolicitante = int.Parse(reader["CodSolicitante"].ToString());
 
-                            p.DataSaida = DateTime.Parse(reader["DataSaida"].ToString());
-                            p.ComMotorista = bool.Parse(reader["ComMotorista"].ToString());
-
-                            p.ModeloVeiculo = reader["ModeloVeiculo"].ToString();
-                            p.NomeSolicitante = reader["NomeSolicitante"].ToString();
+                            p.DataVenda = DateTime.Parse(reader["DataVenda"].ToString());
+                           
 
                             resultado.Add(p);
                         }
