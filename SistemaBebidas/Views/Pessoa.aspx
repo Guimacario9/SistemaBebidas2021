@@ -23,8 +23,12 @@
                 </div>
                  
                  <div class="col-4 form-group">
-                    <asp:Label Text="Telefone" ID="lbCpf" runat="server" CssClass="form-label" AssociatedControlID="txtCpf" />
+                    <asp:Label Text="Cpf" ID="lbCpf" runat="server" CssClass="form-label" AssociatedControlID="txtCpf" />
                     <asp:TextBox runat="server" ID="txtCpf" CssClass="form-control" />
+                </div>
+                 <div class="col-4 form-group">
+                    <asp:Label Text="Tipo Estabecimento" ID="lbTipoEstabelcimento" runat="server" CssClass="form-label" AssociatedControlID="txtTipoEstabelecimento" />
+                    <asp:TextBox runat="server" ID="txtTipoEstabelecimento" CssClass="form-control" />
                 </div>
             </div>
             <br />

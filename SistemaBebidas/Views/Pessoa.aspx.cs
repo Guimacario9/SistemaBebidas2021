@@ -86,7 +86,8 @@ namespace SistemaBebidas.Views
                 p.Nome = txtNome.Text;
                 p.Endereco = txtEndereco.Text;
                 p.Telefone = txtTelefone.Text;
-                p.Cpf.ToString() = txtCpf.Text;
+                p.TipoEstabelecimento = txtTipoEstabelecimento.Text;
+                p.Cpf = int.Parse(txtCpf.Text);
 
                 PessoaControle ctr = new PessoaControle();
                 ctr.Salvar(p);
@@ -135,6 +136,7 @@ namespace SistemaBebidas.Views
                 txtCpf.Text = p.Cpf.ToString();
                 txtEndereco.Text = p.Endereco;
                 txtTelefone.Text = p.Telefone;
+                txtTipoEstabelecimento.Text = p.TipoEstabelecimento;
                 hfCodigo.Value = p.Codigo.ToString();
                  
                 UpCadastro.Update();

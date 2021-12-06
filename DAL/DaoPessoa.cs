@@ -22,6 +22,7 @@ namespace DAL
                     cmd.Parameters.Add(new SqlParameter("nome", p.Nome));
                     cmd.Parameters.Add(new SqlParameter("endereco", p.Endereco));
                     cmd.Parameters.Add(new SqlParameter("telefone", p.Telefone));
+                    cmd.Parameters.Add(new SqlParameter("TipoEstabelecimento", p.TipoEstabelecimento));
                     cmd.Parameters.Add(new SqlParameter("Cpf", p.Cpf));
                     cmd.Parameters.Add(new SqlParameter("PessoaFisica", p.PessoaFisica));
                     cmd.Parameters.Add(new SqlParameter("PessoaJuridica", p.PessoaJuridica));
@@ -83,6 +84,7 @@ namespace DAL
                             p.Nome = reader["nome"].ToString();
                             p.Endereco = reader["Endereco"].ToString();
                             p.Telefone = reader["Telefone"].ToString();
+                            p.TipoEstabelecimento = reader["TipoEstabelecimento"].ToString();
                             p.PessoaJuridica = reader["PessoaJuridica"].ToString();
                             p.PessoaFisica = reader["PessoaFisica"].ToString();
                             p.Cpf = int.Parse(reader["Cpf"].ToString());
@@ -117,6 +119,7 @@ namespace DAL
                             p.Nome = reader["nome"].ToString();
                             p.Endereco = reader["Endereco"].ToString();
                             p.Telefone = reader["Telefone"].ToString();
+                            p.TipoEstabelecimento = reader["TipoEstabelecimento"].ToString();
                             p.PessoaJuridica = reader["PessoaJuridica"].ToString();
                             p.PessoaFisica = reader["PessoaFisica"].ToString();
                             p.Cpf = int.Parse(reader["Cpf"].ToString());
