@@ -10,7 +10,7 @@ namespace Modelo
     {
         public int Codigo { get; set; }
         public int CodPessoa { get; set; }
-        public int CodDistribuicao { get; set; }
+        
         public string Nome { get; set; }
         public string Valor { get; set; }
         public string Produto { get; set; }
@@ -19,11 +19,6 @@ namespace Modelo
         
         
 
-        #region CAMPOS AUXILIARES
-        public string NomeSetor { get; set; }
-        public string PessoaFisica { get; set; }
-        public string PessoaJuridica { get; set; }
-        public string Cidade { get; set; }
-        #endregion
+        
     }
 }
